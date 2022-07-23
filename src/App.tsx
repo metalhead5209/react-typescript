@@ -3,6 +3,7 @@ import './App.css'
 import TodoForm from './components/TodoForm/TodoForm'
 import Todos from './components/Todos/Todos'
 import Todo from './model/todo'
+import { useState } from 'react';
 
 function App() {
   const todos = [
@@ -12,8 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <Todos items={todos}/>
       <TodoForm />
+      <Todos items={todos}/>
     </div>
   )
 }
