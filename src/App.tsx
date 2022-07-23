@@ -1,5 +1,6 @@
 
 import './App.css'
+import TodoForm from './components/TodoForm/TodoForm'
 import Todos from './components/Todos/Todos'
 import Todo from './model/todo'
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Todos items={todos}/>
+      <TodoForm />
     </div>
   )
 }
